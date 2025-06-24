@@ -1,0 +1,53 @@
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  grid-template-rows: 150px 300px 150px;
+  grid-template-areas: 
+    "header header header header"
+    "sidebar content content content"
+    "footer footer footer footer";
+  grid-gap: 10px;
+  height: 100vh;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item-1 {
+  grid-area: header;
+  background-color: #222;
+}
+
+.item-2 {
+  grid-area: content;
+  background-image: url('https://1.bp.blogspot.com/-9TiGRYTfxsM/VNonwaJfkzI/AAAAAAAAxjI/-PgXXZe34Uk/s1600/0_8a3e7_7415e110_orig.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item-3 {
+  grid-area: sidebar;
+  background-image: url('https://th.bing.com/th/id/R.b69b043f91694b8246965f66957503d9?rik=RgMLvVkKyUF9pA&riu=http%3a%2f%2fcliparts.co%2fcliparts%2f5cR%2frMX%2f5cRrMXKbi.jpg&ehk=Sj0lTRkC4Kn3Fussq0SEbvtR4k4UaHji%2bkX7HqlZuZQ%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover;
+}
+
+.item-4 {
+  grid-area: footer;
+  background-image: url('https://wallpapers.com/images/hd/cartoon-pictures-49ltqaq4ziaqr13q.jpg');
+  background-size: cover;
+}
